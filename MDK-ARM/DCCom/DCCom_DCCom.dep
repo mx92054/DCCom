@@ -1,6 +1,6 @@
 Dependencies for Project 'DCCom', Target 'DCCom': (DO NOT MODIFY !)
 F (startup_stm32f103xb.s)(0x5D20017E)(--cpu Cortex-M3 -g --apcs=interwork --pd "__MICROLIB SETA 1"-I F:\SBC\DCCom\MDK-ARM\RTE-I D:\Program\Keil\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include-I D:\Program\Keil\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0--pd "__UVISION_VERSION SETA 514" --pd "_RTE_ SETA 1" --pd "STM32F10X_MD SETA 1"--list startup_stm32f103xb.lst --xref -o dccom\startup_stm32f103xb.o --depend dccom\startup_stm32f103xb.d)
-F (../Src/main.c)(0x5D33D456)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include-I F:\SBC\DCCom\MDK-ARM\RTE-I D:\Program\Keil\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include-I D:\Program\Keil\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0-D__UVISION_VERSION="514" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o dccom\main.o --omf_browse dccom\main.crf --depend dccom\main.d)
+F (../Src/main.c)(0x5D33DCC7)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include-I F:\SBC\DCCom\MDK-ARM\RTE-I D:\Program\Keil\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include-I D:\Program\Keil\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0-D__UVISION_VERSION="514" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o dccom\main.o --omf_browse dccom\main.crf --depend dccom\main.d)
 I (../Inc/main.h)(0x5D1F105B)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x5C46CBD5)
 I (../Inc/stm32f1xx_hal_conf.h)(0x5D1F0DD5)
@@ -166,7 +166,7 @@ I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h)(0x5C46CBD5)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_iwdg.h)(0x5C46CBD5)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x5C46CBD5)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x5C46CBD5)
-F (..\Src\Mbsvr_comm.c)(0x5D200129)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include-I F:\SBC\DCCom\MDK-ARM\RTE-I D:\Program\Keil\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include-I D:\Program\Keil\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0-D__UVISION_VERSION="514" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o dccom\mbsvr_comm.o --omf_browse dccom\mbsvr_comm.crf --depend dccom\mbsvr_comm.d)
+F (..\Src\Mbsvr_comm.c)(0x5D33DBDE)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include-I F:\SBC\DCCom\MDK-ARM\RTE-I D:\Program\Keil\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include-I D:\Program\Keil\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0-D__UVISION_VERSION="514" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o dccom\mbsvr_comm.o --omf_browse dccom\mbsvr_comm.crf --depend dccom\mbsvr_comm.d)
 I (../Inc/Mbsvr_comm.h)(0x5D06FD06)
 I (../Inc/main.h)(0x5D1F105B)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x5C46CBD5)
@@ -196,7 +196,7 @@ I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x5C46CBD5)
 I (../Inc/SysTick.h)(0x5D059E98)
 I (D:\Program\Keil\ARM\ARMCC\include\string.h)(0x5475F300)
 I (D:\Program\Keil\ARM\ARMCC\include\stdlib.h)(0x5475F300)
-F (..\Src\Modbus_svr.c)(0x5D33D1A4)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include-I F:\SBC\DCCom\MDK-ARM\RTE-I D:\Program\Keil\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include-I D:\Program\Keil\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0-D__UVISION_VERSION="514" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o dccom\modbus_svr.o --omf_browse dccom\modbus_svr.crf --depend dccom\modbus_svr.d)
+F (..\Src\Modbus_svr.c)(0x5D33D95A)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include-I F:\SBC\DCCom\MDK-ARM\RTE-I D:\Program\Keil\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include-I D:\Program\Keil\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0-D__UVISION_VERSION="514" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o dccom\modbus_svr.o --omf_browse dccom\modbus_svr.crf --depend dccom\modbus_svr.d)
 I (D:\Program\Keil\ARM\ARMCC\include\stdio.h)(0x5475F300)
 I (../Inc/Modbus_svr.h)(0x5D33C442)
 I (../Inc/Mbsvr_comm.h)(0x5D06FD06)

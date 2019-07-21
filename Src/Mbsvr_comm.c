@@ -27,8 +27,8 @@ void ModbusSvr_block_init(Modbus_block *pblk, UART_HandleTypeDef* pUSARTx)
     pblk->ptrCoils = (short *)malloc(pblk->uCoilLen * sizeof(short));
     if (pblk->ptrCoils == NULL)
         pblk->uCoilLen = 9999;
-		else
-			memset(pblk->ptrCoils,0,pblk->uCoilLen * sizeof(short)) ;
+	else
+		memset(pblk->ptrCoils,0,pblk->uCoilLen * sizeof(short)) ;
 
     pblk->uRegStartAdr = 0;
     pblk->uRegLen = 200 ;
@@ -36,8 +36,8 @@ void ModbusSvr_block_init(Modbus_block *pblk, UART_HandleTypeDef* pUSARTx)
     pblk->ptrRegs = (short *)malloc(pblk->uRegLen * sizeof(short));
     if (pblk->ptrRegs == NULL)
         pblk->uRegLen = 9999;
-		else
-			memset(pblk->ptrRegs,0, pblk->uRegLen * sizeof(short)) ;
+	else
+		memset(pblk->ptrRegs,0, pblk->uRegLen * sizeof(short)) ;
 
     pblk->uRomStartAdr = 0;
     pblk->uRomLen = 200;
@@ -45,8 +45,8 @@ void ModbusSvr_block_init(Modbus_block *pblk, UART_HandleTypeDef* pUSARTx)
     pblk->ptrRoms = (short *)malloc(pblk->uRomLen * sizeof(short));
     if (pblk->ptrRoms == NULL)
         pblk->uRomLen = 9999;
-		else
-			memset(pblk->ptrRoms, 0, pblk->uRomLen * sizeof(short)) ;
+	else
+		memset(pblk->ptrRoms, 0, pblk->uRomLen * sizeof(short)) ;
 
     switch (pblk->baudrate)
     {

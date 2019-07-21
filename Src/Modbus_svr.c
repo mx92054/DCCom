@@ -85,7 +85,6 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
 	
 	if ( huart == &huart1)
 	{
-		HAL_GPIO_TogglePin(GPIOC,GPIO_PIN_14) ;
 		mblock1.ptrRegs[20+ptr2] = pow1_ch ;
 		pow1_buf[ptr1++] = pow1_ch ;
 		HAL_UART_Receive_IT(&huart1, &pow1_ch, 1);
@@ -93,7 +92,6 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
 	
 	if ( huart == &huart3)
 	{
-		HAL_GPIO_TogglePin(GPIOC,GPIO_PIN_14) ;
 		pow2_buf[ptr2++] = pow2_ch ;
 		mblock1.ptrRegs[40+ptr2] = pow2_ch ;
 		HAL_UART_Receive_IT(&huart3, &pow2_ch, 1);

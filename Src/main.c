@@ -121,7 +121,8 @@ int main(void)
 	
 	SetTimer(0,100) ;
 	SetTimer(1,300) ;
-  SetTimer(2, 1000);
+  SetTimer(2, 200);
+  SetTimer(3, 1000);
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -147,14 +148,8 @@ int main(void)
       if (mblock1.ptrRegs[10])
         HAL_GPIO_WritePin(GPIOB, GPIO_PIN_5, GPIO_PIN_SET);
       else
-        HAL_GPIO_WritePin(GPIOB, GPIO_PIN_5, GPIO_PIN_RESET);
-      
-    }
-		
-	  if ( GetTimer(2) )
-		{
-			HAL_GPIO_TogglePin(GPIOC,GPIO_PIN_13) ;
-		}
+        HAL_GPIO_WritePin(GPIOB, GPIO_PIN_5, GPIO_PIN_RESET);      
+    }		
 
 	  if ( GetTimer(1) )
 		{
@@ -163,6 +158,30 @@ int main(void)
       else
         Power_TxCmd(2) ;
 		}
+
+	  if ( GetTimer(2) )
+		{
+       if (mblock1.ptrRegs[0])      
+			    HAL_GPIO_TogglePin(GPIOC,GPIO_PIN_13) ;
+       if (mblock1.ptrRegs[10])      
+			    HAL_GPIO_TogglePin(GPIOC,GPIO_PIN_14) ;
+		}
+
+	  if ( GetTimer(3) )
+		{
+       if (!mblock1.ptrRegs[0])      
+			    HAL_GPIO_TogglePin(GPIOC,GPIO_PIN_13) ;
+       if (!mblock1.ptrRegs[10])      
+			    HAL_GPIO_TogglePin(GPIOC,GPIO_PIN_14) ;
+
+      //10s钟没有收到通信信号，自动关闭电源模块
+      if ( GetCurTick() - mblock1.uLTick > 10000)
+      {
+        mblock1.ptrRegs[0] = 0;
+        mblock1.ptrRegs[10] = 0;
+      }
+		}
+
   }
   /* USER CODE END 3 */
 }
